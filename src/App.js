@@ -15,7 +15,7 @@ function AddMessageBox(props){
 
   function handleSubmit(e) {
     e.preventDefault()
-    props.setUser(prev => prev.concat({author, message, id: Date.now()}))
+    props.setUser(prev => prev.concat({author, Message:message, id: Date.now()}))
     setAuthor("")
     setMessage("")
 }
